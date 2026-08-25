@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AICOS — You stay in control. The AI does the busywork.</title>
+<meta name="description" content="AICOS runs the everyday work that slows your business down. It reads, checks and prepares everything. You give the final yes, and the job is done.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="AICOS — You stay in control. The AI does the busywork.">
+<meta property="og:description" content="Human authority. AI execution. Every action needs your yes, costs stay capped, everything on the record.">
+<meta property="og:url" content="https://aicosystems.uk/">
+
+<!-- theme before first paint: no flash in either direction -->
+<style>html{background:#000}html[data-theme="light"]{background:#fff}</style>
+<script>try{var t=localStorage.getItem('aicos-theme');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="menu-backdrop" aria-hidden="true"></div>
+
+<div class="mmenu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mmenu-top">
+    <a class="logo" href="#top" aria-label="AICOS">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <ellipse cx="32" cy="35" rx="29" ry="10.4" transform="rotate(-8 32 35)" stroke="currentColor" stroke-width="3.1" fill="none"/>
+          <path d="M32 4.5 60 58h-10.6L32 24.4 14.6 58H4L32 4.5Z" fill="currentColor"/>
+          <path d="M32 40.5 39.4 55H24.6L32 40.5Z" fill="currentColor"/>
+        </svg>
+      <span>AICOS</span>
+    </a>
+    <div style="display:flex;gap:9px">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M5.6 5.6 7.2 7.2M16.8 16.8l1.6 1.6M18.4 5.6 16.8 7.2M7.2 16.8 5.6 18.4"/></svg>
+        <svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2z"/></svg>
+      </button>
+      <button class="theme-toggle" type="button" id="menu-close" aria-label="Close menu">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mmenu-links" aria-label="Mobile">
+      <a href="#how"><span>How it works</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#record"><span>The record</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#capabilities"><span>Capabilities</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#services"><span>Services</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#controls"><span>Controls</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#proof"><span>Proof</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a href="#about"><span>About</span><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:.32"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+  </nav>
+
+  <div class="mmenu-foot">
+    <a class="btn btn-solid" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_LY69mEna-2HPRTOCkM1k_0xMDIgAQbd6XbwSAVR1G0X9oScIkbwy-SCPXT1odlGmf414M4oB" target="_blank" rel="noopener">Book a 15-minute call</a>
+    <a class="btn btn-ghost" href="mailto:aicosystems.hq@gmail.com">Email us</a>
+    <p class="mmenu-meta"><span>Human authority. AI execution.</span><span>aicosystems.uk</span></p>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-in">
+    <a class="logo appear appear--scale" href="#top" aria-label="AICOS" style="--d:.08s">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <ellipse cx="32" cy="35" rx="29" ry="10.4" transform="rotate(-8 32 35)" stroke="currentColor" stroke-width="3.1" fill="none"/>
+        <path d="M32 4.5 60 58h-10.6L32 24.4 14.6 58H4L32 4.5Z" fill="currentColor"/>
+        <path d="M32 40.5 39.4 55H24.6L32 40.5Z" fill="currentColor"/>
+      </svg>
+      <span>AICOS</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a class="appear appear--scale" href="#how" style="--d:.16s">How it works</a>
+      <a class="appear appear--soft" href="#record" style="--d:.24s">The record</a>
+      <a class="appear appear--scale" href="#capabilities" style="--d:.32s">Capabilities</a>
+      <a class="appear appear--soft" href="#controls" style="--d:.40s">Controls</a>
+      <a class="appear appear--scale" href="#about" style="--d:.48s">About</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="theme-toggle appear appear--scale" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false" style="--d:.30s">
+        <svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M5.6 5.6 7.2 7.2M16.8 16.8l1.6 1.6M18.4 5.6 16.8 7.2M7.2 16.8 5.6 18.4"/></svg>
+        <svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2z"/></svg>
+      </button>
+      <a class="btn btn-solid appear appear--scale nav-desktop-only" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_LY69mEna-2HPRTOCkM1k_0xMDIgAQbd6XbwSAVR1G0X9oScIkbwy-SCPXT1odlGmf414M4oB" target="_blank" rel="noopener" style="--d:.34s">Book a 15-min call</a>
+      <button class="burger" type="button" id="burger" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── hero ─────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <video class="hero-video" muted loop playsinline
+             disablepictureinpicture disableremoteplayback
+             controlslist="nodownload noplaybackrate noremoteplayback"
+             preload="none" tabindex="-1" aria-hidden="true"
+             data-src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260818_072341_50851634-bbc3-4c33-9acc-7647d4db44aa.mp4"></video>
+    </div>
+    <div class="hero-copy">
+      <span class="badge appear appear--pop" style="--d:.22s">
+        <svg class="badge-star" width="17" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.6C12.55 2.6 12.88 3.15 13.08 4.7c.62 4.7 1.52 5.6 6.22 6.22 1.55.2 2.1.53 2.1 1.08s-.55.88-2.1 1.08c-4.7.62-5.6 1.52-6.22 6.22-.2 1.55-.53 2.1-1.08 2.1s-.88-.55-1.08-2.1c-.62-4.7-1.52-5.6-6.22-6.22C3.15 12.88 2.6 12.55 2.6 12s.55-.88 2.1-1.08c4.7-.62 5.6-1.52 6.22-6.22C11.12 3.15 11.45 2.6 12 2.6Z"/>
+        </svg>
+        Human authority. AI execution.
+      </span>
+
+      <h1 class="h1">
+        <span class="headline-line appear appear--mask" style="--d:.42s">You stay in control.</span>
+        <span class="headline-line appear appear--mask" style="--d:.62s">The AI does the <em>busywork</em>.</span>
+      </h1>
+
+      <p class="lede appear appear--soft" style="--d:.82s">AICOS runs the everyday work that slows your business down. It reads, checks and prepares everything. You give the final yes, and the job is done.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-solid appear appear--btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_LY69mEna-2HPRTOCkM1k_0xMDIgAQbd6XbwSAVR1G0X9oScIkbwy-SCPXT1odlGmf414M4oB" target="_blank" rel="noopener" style="--d:.96s">Book a 15-minute call</a>
+        <a class="btn btn-ghost appear appear--side" href="#how" style="--d:1.10s">See how it works</a>
+      </div>
+
+      <ul class="hero-assure">
+        <li class="appear appear--stat" style="--d:1.12s"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Every action needs your yes</li>
+        <li class="appear appear--stat" style="--d:1.28s"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 14a7 7 0 1 1 14 0"/><path d="M10 14V9"/><path d="M16.5 14h-13"/></svg>Costs stay capped</li>
+        <li class="appear appear--stat" style="--d:1.44s"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5h8a2 2 0 0 1 2 2v9H6a2 2 0 0 0-2 2z"/><path d="M14 6.5h2v11H6"/></svg>Everything on the record</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── problem ──────────────────────────────────────────── -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Manual work slows down <em>everything</em>.</h2>
+        <p class="lede">Enquiries missed. Invoices typed in by hand. Reports stitched together from six different places. It is slow, it invites mistakes, and it is expensive.</p>
+      </div>
+      <ul class="pains reveal">
+        <li>Hours disappear into the same repeated tasks, week after week.</li>
+        <li>Small mistakes turn into big costs further down the line.</li>
+        <li>Nothing is visible until something has already gone wrong.</li>
+        <li>The tools that promise magic ask for your passwords and your blind trust.</li>
+      </ul>
+      <p class="turn reveal">So we built a system that does the work without taking the control.</p>
+    </div>
+  </section>
+
+  <!-- ── how it works ─────────────────────────────────────── -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">One simple loop. A person at the <em>point of decision</em>.</h2>
+        <p class="lede">Every job runs through the same four steps, whether it is one invoice or a whole day of work.</p>
+      </div>
+
+      <div class="flow" aria-hidden="true">
+        <div class="flow-track"><span class="flow-fill"></span><span class="flow-dot"></span></div>
+        <div class="flow-nodes"><span class="fnode"></span><span class="fnode"></span><span class="fnode gate"></span><span class="fnode"></span></div>
+        <span class="flow-gate-label">waiting for you</span>
+      </div>
+
+      <ol class="loop reveal">
+        <li><span class="n">01</span><h3 class="h3">Work arrives</h3><p>An enquiry, an order, an invoice, or any task you hand over.</p></li>
+        <li><span class="n">02</span><h3 class="h3">AICOS does the work</h3><p>It picks the right helper for the job, gets it done and checks it against your rules.</p></li>
+        <li><span class="n">03</span><h3 class="h3">You approve</h3><p>You see a clean, checked result and give the yes. Nothing goes out without it.</p></li>
+        <li><span class="n">04</span><h3 class="h3">On the record</h3><p>Every step is saved in a record you can open any time. Nothing lost, nothing hidden.</p></li>
+      </ol>
+
+      <div class="example reveal">
+        <div>
+          <div class="ex-head">
+            <strong>Invoice 0042</strong>
+            <span class="status demo"><span class="dot"></span>Sample data</span>
+          </div>
+          <ul class="steps">
+            <li><span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></span><span><strong>Received</strong><span>New invoice picked up</span></span></li>
+            <li><span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></span><span><strong>Sorted</strong><span>Recognised as an invoice for services</span></span></li>
+            <li><span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></span><span><strong>Details captured</strong><span>Supplier, amount, date and category</span></span></li>
+            <li><span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></span><span><strong>Checked</strong><span>Nothing missing, nothing off</span></span></li>
+            <li><span class="ic pending"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="10" cy="10" r="6"/></svg></span><span><strong>Your approval</strong><span>Waiting for you</span></span></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:18px;letter-spacing:-.02em">You see every result first. Nothing happens until you approve it.</p>
+          <dl class="meter" style="margin-top:24px">
+            <dt>AI spend against cap</dt>
+            <dd><div class="bar"><i style="width:7.2%"></i></div><div class="bar-lab"><span>£0.36</span><span>£5.00 cap</span></div></dd>
+            <dt>Actions taken without you</dt>
+            <dd><div class="bar"><i style="width:0"></i></div><div class="bar-lab"><span>0</span><span>never</span></div></dd>
+            <dt>Steps on the record</dt>
+            <dd><div class="bar"><i style="width:100%"></i></div><div class="bar-lab"><span>5 of 5</span><span>openable</span></div></dd>
+          </dl>
+          <p class="lede" style="font-size:13.5px">No outside action without your approval. The cap never rises on its own.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── the record: the real product board ───────────────── -->
+  <section class="section" id="record">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Everything on the <em>record</em>.</h2>
+        <p class="lede">What ran, why it ran and who approved it, saved as it happens and open to you. This is the board we run our own operations from.</p>
+      </div>
+
+      <div class="board reveal">
+        <aside class="board-rail" aria-hidden="true">
+          <div class="rail-brand">
+            <span class="dot"><i></i></span>
+            <span><b>AICOS</b><span>Jarvis Command Centre</span></span>
+          </div>
+          <div class="rail-item"><i></i>Executive Overview</div>
+          <div class="rail-group">Operations</div>
+          <div class="rail-item on"><i></i>Missions</div>
+          <div class="rail-item"><i></i>Departments</div>
+          <div class="rail-item"><i></i>Approvals</div>
+          <div class="rail-item"><i></i>Activity</div>
+          <div class="rail-item"><i></i>Reports</div>
+          <div class="rail-item"><i></i>System Health</div>
+          <div class="rail-group">Intelligence</div>
+          <div class="rail-item"><i></i>Memory</div>
+          <div class="rail-item"><i></i>Vault</div>
+          <div class="rail-group">System</div>
+          <div class="rail-item"><i></i>Audit</div>
+          <div class="rail-item"><i></i>Settings</div>
+          <div class="rail-foot">
+            <div class="who">
+              <span class="av">F</span>
+              <span><b>Founder</b><small>Owner Access</small></span>
+              <span class="ready">ready</span>
+            </div>
+            <div class="rail-kv">
+              <span>Runtime</span><span>Online Provider</span>
+              <span>ready</span><span>Keys secured / live locked</span>
+              <span>Memory</span><span>in flight 0</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="board-main">
+          <div class="board-head">
+            <div>
+              <p class="board-eyebrow">Live operations</p>
+              <h3>Missions</h3>
+              <p>Operational board from verified AICOS mission state. Missing stage, owner and worker fields stay explicit until Export V2 supplies them.</p>
+            </div>
+            <div class="live-chip"><b>Live</b>22s ago<br>Legacy unsigned feed</div>
+          </div>
+
+          <div class="board-grid">
+            <div class="lanes-wrap">
+              <div class="lanes-bar">Live operations board <span>Verified state lanes</span></div>
+              <div class="lanes">
+                <div class="lane">
+                  <div class="lane-head"><b>Intake</b><small>5 missions</small></div>
+                  <div class="lane-cards">
+                    <div class="mcard"><b>M-107</b><p>Write the Pinterest pin set for the three products</p><div class="mrow"><span>State</span><em>Draft</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                    <div class="mcard st-cancelled"><b>M-105</b><p>Draft the first 7 Instagram posts from the content plan</p><div class="mrow"><span>State</span><em>Cancelled</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                    <div class="mcard"><b>M-108</b><p>Create the 10 Etsy listing images for all four products</p><div class="mrow"><span>State</span><em>Draft</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                    <div class="mcard st-archived"><b>M-104</b><p>SMOKE TEST (M-103 go-live) — verifying automatic…</p><div class="mrow"><span>State</span><em>Archived</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                    <div class="mcard"><b>M-103</b><p>ARCHITECTURAL ENGINEERING — M-101…</p><div class="mrow"><span>State</span><em>Draft</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                  </div>
+                </div>
+
+                <div class="lane">
+                  <div class="lane-head"><b>Working</b><small>0 missions</small></div>
+                  <p class="lane-empty">Actively running work. None visible in the current export.</p>
+                </div>
+
+                <div class="lane">
+                  <div class="lane-head"><b>Review</b><small>1 mission</small></div>
+                  <div class="lane-cards">
+                    <div class="mcard st-paused"><b>M-102</b><p>Build AICOS Mission Control: a secure, mobile-…</p><div class="mrow"><span>State</span><em>Paused</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                  </div>
+                </div>
+
+                <div class="lane">
+                  <div class="lane-head"><b>Approval</b><small>1 mission</small></div>
+                  <div class="lane-cards">
+                    <div class="mcard"><b>M-106</b><p>Draft the first 7 Instagram posts from the content pla…</p><div class="mrow"><span>State</span><em>Accepted</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                  </div>
+                </div>
+
+                <div class="lane">
+                  <div class="lane-head"><b>Delivered</b><small>2 missions</small></div>
+                  <div class="lane-cards">
+                    <div class="mcard st-done"><b>M-101</b><p>Redesign the AI-COS public website into a premium…</p><div class="mrow"><span>State</span><em>Done</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                    <div class="mcard st-done"><b>M-100</b><p>Plan and build the AI-COS website waitlist page from…</p><div class="mrow"><span>State</span><em>Done</em></div><div class="mrow"><span>Department</span><em>Unavailable</em></div><div class="mrow"><span>Worker</span><em>Unavailable</em></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="inspector">
+              <div class="insp-bar">Mission inspector <span>Draft</span></div>
+              <dl class="insp-kv">
+                <div><dt>Mission reference</dt><dd>M-107</dd></div>
+                <div><dt>Objective</dt><dd>Write the Pinterest pin set for the three products</dd></div>
+                <div><dt>Verified state</dt><dd>Draft</dd></div>
+                <div><dt>Derived lane</dt><dd>Stage unavailable</dd></div>
+                <div><dt>Department</dt><dd>Unavailable</dd></div>
+                <div><dt>Worker / model</dt><dd>Unavailable</dd></div>
+                <div><dt>Source</dt><dd>Direct from AICOS legacy export</dd></div>
+                <div><dt>Freshness</dt><dd>22s ago</dd></div>
+              </dl>
+              <p class="insp-note">Export V2 is required for stage history, handoffs, worker/model involvement, checkpoints, evidence, reviews, blockers, costs and safe artifact summaries.</p>
+              <span class="btn btn-ghost insp-btn">Open in Executive Overview</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── capabilities ─────────────────────────────────────── -->
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">From busywork to decisions. Built for <em>real operations</em>.</h2>
+      </div>
+      <div class="bento reveal">
+        <article class="panel tile wide">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Paperwork, handled</h3></div>
+          <p>Invoices, orders, forms and enquiries read, checked and prepared for your sign-off. Whatever paperwork feeds your business, it comes back clean, complete and ready to use.</p>
+        </article>
+        <article class="panel tile">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h6l2 3h8"/><path d="M4 7v10h16V10"/><path d="M8 13h8"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Work that flows</h3><span class="status beta"><span class="dot"></span>Beta</span></div>
+          <p>Approvals routed to the right person, reports assembled, tools talking to each other.</p>
+        </article>
+        <article class="panel tile">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Websites that work</h3></div>
+          <p>Designed, built and looked after by us. This site is our own work.</p>
+        </article>
+        <article class="panel tile">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4.5h9a2 2 0 0 1 2 2v13H7a2 2 0 0 0-2 2z"/><path d="M16 7h3v14H7"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Everything on the record</h3></div>
+          <p>Every action logged. Every result traceable. Open it whenever you like.</p>
+        </article>
+        <article class="panel tile">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17V10"/><path d="M20 17H4"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Costs under control</h3></div>
+          <p>AI use is capped and visible. No surprise bills, ever.</p>
+        </article>
+        <article class="panel tile">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 19 6v6c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <div class="tile-head"><h3 class="h3">Security &amp; privacy</h3></div>
+          <p>Minimum data. Encrypted. Never used to train anything.</p>
+        </article>
+      </div>
+      <p class="lede reveal" style="margin-top:24px;font-size:14px">We start every new client on sample data. Yours stays yours.</p>
+    </div>
+  </section>
+
+  <!-- ── services ─────────────────────────────────────────── -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Three ways AICOS <em>carries your business</em>.</h2>
+        <p class="lede">Behind each one sits the same engine: AI doing the heavy lifting, your rules deciding what counts, and you approving what matters.</p>
+      </div>
+      <div class="services reveal">
+        <article class="panel svc"><h3 class="h3">Operations, automated</h3><p>The everyday load handled end to end. AICOS reads what comes in, checks every detail against your rules and delivers clean results into your systems, with your approval sealing each step.</p></article>
+        <article class="panel svc"><h3 class="h3">Websites, built and run</h3><p>We design, build, host and keep improving business websites that are made to win customers. The site you are reading is our own work, and we run it the way we would run yours.</p></article>
+        <article class="panel svc"><h3 class="h3">Tools, connected</h3><p>Email, documents, calendars and channels joined into one flow, so work moves between your tools without anyone copying and pasting. Delivered as a service that grows with you.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── controls ─────────────────────────────────────────── -->
+  <section class="section" id="controls">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Control that is built in, <em>not promised</em>.</h2>
+        <p class="lede">Every safeguard below is part of how the system is made. Ask us to show you. We will.</p>
+      </div>
+      <ul class="controls reveal">
+        <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><h3 class="h3">Your yes comes first</h3><p>Nothing is sent, spent or shared on its own. Every outside action waits for a person.</p></div></li>
+        <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17V10"/><path d="M20 17H4"/></svg></span><div><h3 class="h3">Spending stays capped</h3><p>AI use has hard limits that never rise on their own. No surprise bills, ever.</p></div></li>
+        <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4.5h9a2 2 0 0 1 2 2v13H7a2 2 0 0 0-2 2z"/><path d="M16 7h3v14H7"/></svg></span><div><h3 class="h3">Everything on the record</h3><p>What ran, why it ran and who approved it, saved as it happens and open to you.</p></div></li>
+        <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v6"/></svg></span><div><h3 class="h3">One switch stops it all</h3><p>Everything can be paused instantly, any time. Built in from day one.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── data ─────────────────────────────────────────────── -->
+  <section class="section" id="data">
+    <div class="wrap">
+      <div class="photo-band reveal">
+        <img src="assets/photos/privacy-1200.jpg" srcset="assets/photos/privacy-700.jpg 700w, assets/photos/privacy-1200.jpg 1200w, assets/photos/privacy-2000.jpg 2000w" sizes="(max-width:1240px) 100vw, 1240px" width="2000" height="962" alt="A dimly lit office seen through a frosted glass partition." loading="lazy" decoding="async">
+        <div class="band-in">
+          <h2 class="h2">Private by <em>design</em>.</h2>
+          <p>We take only what a job needs, use it for that one agreed purpose, and delete it when the job is done. Your data never trains a model and never serves anyone else. We start on sample data, and yours is only touched under a signed agreement.</p>
+          <a class="band-link" href="privacy.html">Read how we handle data
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── proof ────────────────────────────────────────────── -->
+  <section class="section" id="proof">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Systems built <em>with AICOS</em>.</h2>
+        <p class="lede">Not case studies. Actual systems, running today, honestly labelled.</p>
+      </div>
+      <ul class="proof reveal">
+        <li><h3>AICOS Core</h3><p>The engine behind our own company. It routes the work, holds the approvals, caps the spending and keeps the record. Everything this page promises, we run on it daily.</p><span class="status live"><span class="dot"></span>Running now</span></li>
+        <li><h3>This website</h3><p>Designed, written, built, audited and shipped through AICOS. You are looking at the proof.</p><span class="status live"><span class="dot"></span>Running now</span></li>
+        <li><h3>The invoice line</h3><p>The live example above, end to end on sample documents. Read, checked and held for approval, with every run recorded.</p><span class="status demo"><span class="dot"></span>Demonstration</span></li>
+        <li class="reserved"><h3>Your system</h3><p>This space is waiting for a real client story, published only with permission. No invented case studies, ever.</p><span class="status"><span class="dot"></span>Reserved</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── about ────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="photo-band band-about reveal">
+        <img src="assets/photos/about-1200.jpg" srcset="assets/photos/about-700.jpg 700w, assets/photos/about-1200.jpg 1200w, assets/photos/about-2000.jpg 2000w" sizes="(max-width:1240px) 100vw, 1240px" width="2000" height="1125" alt="An office at night seen from outside, colleagues still at work behind the glass." loading="lazy" decoding="async">
+      </div>
+      <div class="about reveal">
+        <h2 class="h2">We run our own company <em>on AICOS</em>.</h2>
+        <div>
+          <p class="lede">Before offering the system to anyone, we made it run our own operations, with every task tracked and every action approved. What you see on this page is what we use every day. We would rather show you real work on sample data than sell you a promise.</p>
+          <p class="lede">AICOS brings intelligent systems, people and data together into one confident flow, built for clarity, control and forward progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── close ────────────────────────────────────────────── -->
+  <section class="close" id="contact">
+    <div class="wrap">
+      <h2 class="h2 reveal">Bring us one <em>broken workflow</em>.</h2>
+      <p class="lede reveal">Fifteen minutes is all it takes to see if AICOS fits.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-solid" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_LY69mEna-2HPRTOCkM1k_0xMDIgAQbd6XbwSAVR1G0X9oScIkbwy-SCPXT1odlGmf414M4oB" target="_blank" rel="noopener">Book a 15-minute call</a>
+        <a class="btn btn-ghost" href="mailto:aicosystems.hq@gmail.com">Email us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div style="max-width:34ch">
+        <a class="logo" href="#top" style="margin-bottom:14px">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <ellipse cx="32" cy="35" rx="29" ry="10.4" transform="rotate(-8 32 35)" stroke="currentColor" stroke-width="3.1" fill="none"/>
+        <path d="M32 4.5 60 58h-10.6L32 24.4 14.6 58H4L32 4.5Z" fill="currentColor"/>
+        <path d="M32 40.5 39.4 55H24.6L32 40.5Z" fill="currentColor"/>
+      </svg>
+          <span>AICOS</span>
+        </a>
+        <p>Human authority. AI execution. Your company's AI operating system.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <div>
+          <h3>Product</h3>
+          <a href="#how">How it works</a>
+          <a href="#record">The record</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#controls">Controls</a>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="#about">About</a>
+          <a href="#proof">Proof in production</a>
+          <a href="mailto:aicosystems.hq@gmail.com">Email us</a>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="data-deletion.html">Data deletion</a>
+        </div>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="yr">2026</span> AICOS Systems. All rights reserved.</span>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/aicosystems-hq/" target="_blank" rel="noopener" aria-label="AICOS on LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95 4 0 4.4 2.5 4.4 5.9V21h-4v-5.4c0-1.3 0-3-1.9-3s-2.15 1.4-2.15 2.9V21h-4z"/></svg></a>
+        <a href="https://www.instagram.com/aicos.systems/" target="_blank" rel="noopener" aria-label="AICOS on Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/aicosystems" target="_blank" rel="noopener" aria-label="AICOS on Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.29-.04-1.27-.13-2.41-.13-2.39 0-4.03 1.46-4.03 4.14V9.9H7.5V13h2.76v8z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/landing.js"></script>
+</body>
+</html>

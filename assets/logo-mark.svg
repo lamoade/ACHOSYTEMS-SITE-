@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="AICOS">
+  <!-- orbit ring -->
+  <ellipse cx="32" cy="35" rx="29" ry="10.4" transform="rotate(-8 32 35)"
+           stroke="currentColor" stroke-width="3.1" fill="none"/>
+  <!-- the A: two tapered strokes from a shared apex -->
+  <path d="M32 4.5 60 58h-10.6L32 24.4 14.6 58H4L32 4.5Z" fill="currentColor"/>
+  <!-- inner counter-stroke, the highlight edge of the mark -->
+  <path d="M32 19.5 45.6 45.4h-6.2L32 31.2l-7.4 14.2h-6.2L32 19.5Z" fill="currentColor" opacity=".55"/>
+  <!-- keystone triangle -->
+  <path d="M32 40.5 39.4 55H24.6L32 40.5Z" fill="currentColor"/>
+</svg>
